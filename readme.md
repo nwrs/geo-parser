@@ -22,7 +22,6 @@ $ mvn clean install
 
 ### Examples
 
-
 ``` scala
 scala> GeoParser.parse("camden")
 res0: Option[com.nwrs.parsing.GeoLocation] = Some(GeoLocation(Camden,Greater London,England,UK,51.5457,-0.1403,4,GB-CMD))
@@ -42,4 +41,13 @@ res4: Option[com.nwrs.parsing.GeoLocation] = Some(GeoLocation(,,Scotland,UK,55.9
 scala> GeoParser.parse("random place, uk")
 res5: Option[com.nwrs.parsing.GeoLocation] = Some(GeoLocation(,,,UK,51.50023,-0.12427,1,GB-UKM))
 
+scala> GeoParser.parse("albuquerque")
+res6: Option[com.nwrs.parsing.GeoLocation] = Some(GeoLocation(Albuquerque,New Mexico,,US,35.0853336,-106.6055534,4,))
+
+scala> GeoParser.parse("unknown town, MA")
+res7: Option[com.nwrs.parsing.GeoLocation] = Some(GeoLocation(,Massachusetts,,US,42.230171,-71.530106,3,))
 ```
+
+Used by [Tempest-Streamer](https://github.com/nwrs/tempest-streamer) to map tweets in real-time:
+
+![Example Output](https://github.com/nwrs/tempest-streamer/blob/master/docs/images/screenshots/uk-mapping.jpg)
