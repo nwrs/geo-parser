@@ -1,11 +1,13 @@
 # Geo Parser
 
-Simple NLP library written in Scala to parse free text locations into rich geo locations with lat/long co-ordinates and ISO-31662 codes.
+Simple Scala NLP library to parse free text locations into rich geo locations with lat/long co-ordinates and ISO-31662 codes.
 
 * Useful for extracting geo locations from a user's social media profile page to map the results.
 * Currently parses UK and US locations.
 * A parsed location provides the town, area, region, country, geo co-ords and ISO-31662 codes (UK only).
-* Match is graded for accuracy denoting what matched: 1=Country, 2=Region, 3=Area, 4=Town.
+* Match is graded for accuracy denoting what matched; Country, Region, Area or Town.
+* More than a thousand UK cities, towns, urban areas and counties matched.
+* US States and major cities matched.
 
 ### Build requirements
 
