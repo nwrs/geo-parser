@@ -7,7 +7,7 @@ Simple Scala NLP library to parse free text locations into rich geo locations wi
 * A parsed location provides the town, area, region, country, geo co-ords and ISO-31662 codes (UK only).
 * Match is graded for accuracy denoting what matched; Country, Region, Area or Town.
 * More than a thousand UK cities, towns, urban areas and counties matched.
-* US States and major cities matched.
+* US States and some major cities matched (more work required here!)
 
 ### Build requirements
 
