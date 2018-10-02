@@ -2,19 +2,6 @@ package com.nwrs.parsing
 
 import scala.io.Source
 
-case class GeoLocation(
-  town: String,
-  area: String,
-  region: String,
-  country: String,
-  latitude: Double,
-  longitude: Double,
-  accuracy: Int,
-  iso31662: String) {
-  val location = Seq(town, area, region, country).filter( s => s!=null && !s.isEmpty).mkString(", ")
-  val locationGeo = s"${latitude.toString},${longitude.toString}"
-}
-
 class GeoParserCsv(file:String, hasIso:Boolean=false) extends Serializable {
 
   private object GeoCsvOffsets extends Enumeration {
