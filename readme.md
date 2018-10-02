@@ -50,6 +50,6 @@ scala> GeoParser.parse("unknown town, MA")
 res7: Option[com.nwrs.parsing.GeoLocation] = Some(GeoLocation(,Massachusetts,,US,42.230171,-71.530106,3,))
 ```
 
-Used by [Tempest-Streamer](https://github.com/nwrs/tempest-streamer) to map tweets in real-time:
+Derived from code used by [Tempest-Streamer](https://github.com/nwrs/tempest-streamer) to map tweets in real-time:
 
 ![Example Output](https://github.com/nwrs/tempest-streamer/blob/master/docs/images/screenshots/uk-mapping.jpg)
